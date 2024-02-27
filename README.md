@@ -113,3 +113,11 @@ The second case was an additional event to test the stability of the simuations 
 Once implemented in C++, the results were analyzed via Excel spreadsheets, by importing the generated csv files. The accelerations were then compared to the Matlab results. 
 
 A second step was to analyze the Total Mechanical Energy in the system. Since there is no friction, air resistance or damping, the total energy must be conserved.
+
+#### Results
+
+<p align="center">
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/cpp_10e-3_Acceleration.png" alt="Acceleration" width="450"/>
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/cpp_10e-3_Energy.png" alt="Energy" width="450"/>
+</p>
+
