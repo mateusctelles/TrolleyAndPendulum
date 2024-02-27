@@ -53,8 +53,9 @@ int main() {
         }
     }
 
+    // Test simulation results for Energy Conservation criteria.
     testEnergyConservation(stateHistory, params, tStart, tStop, tMajorStep, maxEnergyImbalance, maxEnergyTrendImbalance);
-    
+
     // Open the file using the constructed path
     std::ofstream outFile("C:/Users/mateu/Desktop/Canopy/TrolleyAndPendulum/derivatives.csv");
 

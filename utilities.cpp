@@ -14,6 +14,7 @@ std::vector<std::vector<double>> globalDxStates;
 
 
 void testEnergyConservation(const std::vector<std::vector<double>>& stateHistory, const SystemParams& params, double tStart, double tStop, double tMajorStep, double maxEnergyImbalance, double maxEnergyTrendImbalance) {
+    
     // Calculate the total mechanical energy of the system
     std::vector<double> totalMechanicalEnergy;
     calculateTotalMechanicalEnergy(stateHistory, params.springStiffness, params.trolleyMass, params.pendulumMass, params.rodLength, 9.81, totalMechanicalEnergy);
@@ -22,6 +23,7 @@ void testEnergyConservation(const std::vector<std::vector<double>>& stateHistory
     double maxEnergy = *std::max_element(totalMechanicalEnergy.begin(), totalMechanicalEnergy.end());
     double energyDifference = maxEnergy - minEnergy;
     
+    // Perform Moving Average signal processing on the results to check for significant trends of energy imbalance.
     int windowSize = (tStop - tStart) / (6 * tMajorStep);
     std::vector<double> energyMovingAvg = movingAverage(totalMechanicalEnergy, windowSize);
     double firstValue = energyMovingAvg.front();
