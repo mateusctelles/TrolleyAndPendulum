@@ -13,7 +13,7 @@ int main() {
     // Simulation settings
     const double tStart = 0;
     const double tStop = 5;
-    const double tMajorStep = 1e-3;
+    const double tMajorStep = 1e-4;
     const int numSteps = static_cast<int>((tStop - tStart) / tMajorStep) + 1;
     const double maxEnergyImbalance = 10;
     const double maxEnergyTrendImbalance = 5;
