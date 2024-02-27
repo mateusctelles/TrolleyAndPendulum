@@ -86,3 +86,30 @@ We can then build the Lagrangian equation, to then derive the equations of motio
 </p>
 
 
+## Testing and Validation
+
+### Matlab
+
+  In the testing and validation phase, preliminary tests were conducted in MATLAB to obtain quick feedback on the system's behavior during the derivation of the equations. 
+  
+  An animation of the system was created to visually assess its behavior, providing insights into the dynamics of the trolley and pendulum. Additionally, accelerations and energies were analyzed to validate the simulation results and ensure the accuracy of the model. 
+  
+  This iterative process of testing and refinement helped refine the simulation and ensure its reliability before implementation in C++.
+
+<p align="center">
+
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/final_gif.gif?raw=true" alt="final_gif" width="450"/>
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/ZeroStiffness.gif?raw=true" alt="ZeroStiffness" width="450"/>
+ 
+  First Image: Initial Position = 0.02m; Spring Stiffness = 5000N/m; Stepsize = 0.0001 (used this value in matlab due to the simpler Forward Euler integrator being used).
+ 
+  Second Image: Initial Position = 0.0m; Spring Stiffness = 0; Initial Angle = 160 degrees.
+</p>
+
+The second case was an additional event to test the stability of the simuations even under more unstable conditions. It was then concluded that the model was working properly (except when StepSize smaller than needed).
+
+### C++
+
+Once implemented in C++, the results were analyzed via Excel spreadsheets, by importing the generated csv files. The accelerations were then compared to the Matlab results. 
+
+A second step was to analyze the Total Mechanical Energy in the system. Since there is no friction, air resistance or damping, the total energy must be conserved.
