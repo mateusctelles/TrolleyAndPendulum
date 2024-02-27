@@ -4,6 +4,7 @@
 #include <functional>
 #include <vector>
 #include <iostream>
+#include "utilities.hpp"
 
 std::vector<std::vector<double>> solveMidpointMethod(double tStart, double tStop, double tMajorStep, std::vector<double> x0, std::function<void(std::vector<double>&, const std::vector<double>&, void*)> physicsFunction, void* userArgs)
 {
