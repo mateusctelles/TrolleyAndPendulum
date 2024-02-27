@@ -5,14 +5,9 @@
 This project simulates the dynamics of a system consisting of a trolley connected to a fixed base via a spring, with a pendulum rigidly attached to the trolley. The simulation aims to provide insights into the behavior of the system under various conditions and to validate energy conservation principles.
 
 <p align="center">
-  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/trolleyandpendulum.png?raw=true" alt="trolleyandpendulum" width="350"/>
-  
-</p>
-
-<p align="center">
-  
-  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/final_gif.gif?raw=true" alt="final_gif" width="350"/>
-  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/ZeroStiffness.gif?raw=true" alt="ZeroStiffness" width="350"/>
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/trolleyandpendulum.png?raw=true" alt="trolleyandpendulum" width="300"/>
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/final_gif.gif?raw=true" alt="final_gif" width="300"/>
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/ZeroStiffness.gif?raw=true" alt="ZeroStiffness" width="300"/>
   
            Figure 2 and 3: Plots and results from the code made in Matlab, using the prototype code before building it into C++
 </p>
