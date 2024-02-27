@@ -110,6 +110,12 @@ The second case was an additional event to test the stability of the simuations 
 
 ### C++
 
+**Test Procedures**
+
+- Evaluation of system acceleration profile
+- Evaluation of Total Mechanical Energy (TME) differences
+- Evaluation of the trend of change of the Total Mechanical Energy variation by looking into the Moving Average of the (TME)
+  
 Once implemented in C++, the results were analyzed via Excel spreadsheets, by importing the generated csv files. The accelerations were then compared to the Matlab results. 
 
 A second step was to analyze the Total Mechanical Energy in the system. Since there is no friction, air resistance or damping, the total energy must be conserved.
@@ -136,3 +142,15 @@ The code is prepared to always perform a test on the results, and then evaluate 
 </p>
 
 **- Step Size: 0.0001**
+<p align="center">
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/cpp_10e-4_Acceleration.png" alt="Acceleration" width="450"/>
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/cpp_10e-4_Energy.png" alt="Energy" width="450"/>
+</p>
+
+Now we can see that the acceleration profile looks more stable. To make sure of this, we then look to the Total Mechanical Energy plot. We can se that the variation over time is way smaller then the previous results. The trend also show a way smaller variation over time.
+
+We then look at how the results went against the defined criteria:
+
+<p align="center">
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/pass.png" alt="Failed" width="450"/>
+</p>
