@@ -56,3 +56,29 @@ Open the generated csv files in your preferred plotting tool to observe the syst
 - **components.cpp**: Is the file that contains the classes of the physical components being modelled. This is the file to be edited if the user desires to change system parameters.
 
 - **odesolver.cpp**: This file contains the solver that performs the integration on the equations of movement. It uses the Midpoint Method of numerical integration.
+
+## Equations
+
+The system was modelled using Lagrangian Mechanics.
+
+Skipping initial algebraic steps, the first goal is to arrive at the equations of total Kinetic Energy T<sub>total</sub> and Total Potential Energy V<sub>total</sub>.
+
+<p align="center">
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/T_total_black.png?raw=true" alt="Total Kinetic Energy">
+</p>
+
+<p align="center">
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/v_total_black.png?raw=true" alt="Total Potential Energy">
+</p>
+
+We can then build the Lagrangian equation, to then derive the equations of motion for the Acceleration of the Trolley and the Angular Acceleration of the Pendulum
+
+<p align="center">
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/x_dot_dot_black.png?raw=true" alt="x_dot_dot">
+</p>
+
+<p align="center">
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/black_theta_dot_dot_.gif?raw=true" alt="Black Theta Double Dot">
+</p>
+
+
