@@ -5,15 +5,18 @@
 #include <vector>
 #include <fstream>
 #include <iostream>
+#include <filesystem>
 
 
 int main() {
 
-    // Time settings
+    // Simulation settings
     const double tStart = 0;
     const double tStop = 5;
-    const double tMajorStep = 1e-4;
+    const double tMajorStep = 1e-3;
     const int numSteps = static_cast<int>((tStop - tStart) / tMajorStep) + 1;
+    const double maxEnergyImbalance = 10;
+    const double maxEnergyTrendImbalance = 5;
 
     // Instantiate the system components
     Spring spring;
@@ -50,8 +53,10 @@ int main() {
         }
     }
 
-    // Open a file for writing
-    std::ofstream outFile("C:/Users/mateu/Desktop/Canopy/non-linear-dynamics-ckdoqt/derivatives.csv");
+    testEnergyConservation(stateHistory, params, tStart, tStop, tMajorStep, maxEnergyImbalance, maxEnergyTrendImbalance);
+    
+    // Open the file using the constructed path
+    std::ofstream outFile("C:/Users/mateu/Desktop/Canopy/TrolleyAndPendulum/derivatives.csv");
 
     // Check if the file is open
     if (outFile.is_open()) {
