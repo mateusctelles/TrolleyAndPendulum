@@ -5,7 +5,14 @@
 This project simulates the dynamics of a system consisting of a trolley connected to a fixed base via a spring, with a pendulum rigidly attached to the trolley. The simulation aims to provide insights into the behavior of the system under various conditions and to validate energy conservation principles.
 
 <p align="center">
-  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/trolleyandpendulum.png?raw=true" alt="Trolley and Pendulum"/>
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/trolleyandpendulum.png?raw=true" alt="trolleyandpendulum" width="250"/>
+  
+</p>
+
+<p align="center">
+  
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/final_gif.gif?raw=true" alt="final_gif" width="450"/>
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/ZeroStiffness.gif?raw=true" alt="ZeroStiffness" width="450"/>
 </p>
 
 
@@ -78,7 +85,7 @@ We can then build the Lagrangian equation, to then derive the equations of motio
 </p>
 
 <p align="center">
-  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/black_theta_dot_dot_.gif?raw=true" alt="Black Theta Double Dot">
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/theta_dot_dot_black.png?raw=true" alt="theta_dot_dot">
 </p>
 
 
