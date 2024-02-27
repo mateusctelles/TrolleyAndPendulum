@@ -125,11 +125,11 @@ For all simulations in this section, the system parameters, the duration, the en
   <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/cpp_10e-3_Energy.png" alt="Energy" width="450"/>
 </p>
 
-From these results, we can see that the behavior is similar to the expected. But a problem is the growing accelerations over time. This is a symptom of the energy not being conserve. Usually this is related to bad convergence due to the Step Size not being small enough for the system parameters to properly converge. This usually happens when fast dynamics are present. And since we have a relatively short rod (0.1m) and a stiff spring (5000N/m), we get into this sort of problem.
+These results indicate that the system's behavior aligns with expectations. However, a notable issue is the increasing accelerations over time, suggesting a lack of energy conservation. This discrepancy is often attributed to poor convergence caused by an insufficiently small Step Size for the system's parameters to converge accurately. Such issues typically arise in systems with fast dynamics, such as ours, characterized by a relatively short rod (0.1m) and a stiff spring (5000N/m).
 
-Looking at the Energy conservation plot, we can observe the trend of an increasing Total Mechanical Energy, which confirms the first assessment. 
+Upon reviewing the Energy conservation plot, we can discern a trend of increasing Total Mechanical Energy, further supporting the initial assessment.
 
-The code is prepared to always perform a test on the results, and then evaluate if these results are valid under the defined criteria. For this simulation, we get the following message/test result:
+The code is designed to conduct tests on the results and evaluate their compliance with predefined criteria. In this simulation, the following message/test result was obtained:
 
 <p align="center">
   <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/failed.png" alt="Failed" width="450"/>
