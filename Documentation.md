@@ -136,3 +136,15 @@ The code is prepared to always perform a test on the results, and then evaluate 
 </p>
 
 **- Step Size: 0.0001**
+<p align="center">
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/cpp_10e-4_Acceleration.png?raw=true" alt="Acceleration" width="450"/>
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/cpp_10e-4_Energy.png?raw=true" alt="Energy" width="450"/>
+</p>
+
+Now we can see that the acceleration profile looks more stable. To make sure of this, we then look at the Total Mechanical Energy plot. We can see that the variation over time is way smaller than the previous results. The trend also shows a way smaller variation over time.
+
+We then look at how the results went against the defined criteria:
+
+<p align="center">
+  <img src="https://github.com/mateusctelles/TrolleyAndPendulum/blob/main/images/pass.png?raw=true" alt="Failed" width="450"/>
+</p>
